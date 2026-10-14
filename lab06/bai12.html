@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12 - Kiểm tra năm nhuận</title>
+</head>
+
+<body>
+
+    <input type="number" id="nam" placeholder="Nhập một năm">
+    <button onclick="kiemTraNamNhuan()">Kiểm tra</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function kiemTraNamNhuan() {
+            let nam = parseInt(document.getElementById("nam").value);
+            let kq = document.getElementById("ketQua");
+
+            if ((nam % 4 === 0 && nam % 100 !== 0) || (nam % 400 === 0)) {
+                kq.innerText = "Là năm nhuận";
+            } else {
+                kq.innerText = "Không phải năm nhuận";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

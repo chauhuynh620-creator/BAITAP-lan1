@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="lacXucXac()">Lắc xúc xắc</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function lacXucXac() {
+
+            let so = Math.floor(Math.random() * 6) + 1;
+            let kq = document.getElementById("ketQua");
+            kq.innerText = "Kết quả: " + so;
+        }
+    </script>
+
+</body>
+
+</html>

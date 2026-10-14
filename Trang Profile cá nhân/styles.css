@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eeeff1;
+}
+
+/* bước 2 — style khối card */
+.profile-card {
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* bước 3 — style avatar */
+.profile-card .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4a76ee;
+    margin-bottom: 15px;
+}
+
+/* bước 4 — style tên và nghề nghiệp */
+.profile-card .name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1c20;
+    margin-bottom: 5px;
+}
+
+.profile-card .job-title {
+    font-size: 16px;
+    color: #4a76ee;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-card .bio {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* bước 5 — style kỹ năng */
+.profile-card .skills-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.profile-card .skills-list li {
+    display: inline-block;
+    background-color: #eeeff1;
+    color: #1a1c20;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* bước 6 — style nút liên hệ */
+.profile-card .btn-contact {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #4a76ee;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.profile-card .btn-contact:hover {
+    background-color: #355bc4;
+}

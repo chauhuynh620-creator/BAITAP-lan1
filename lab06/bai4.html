@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4 - Máy tính tình yêu</title>
+</head>
+
+<body>
+
+    <input type="text" id="ten1" placeholder="Tên của bạn">
+    <input type="text" id="ten2" placeholder="Tên người còn lại">
+    <button onclick="tinhTinhYeu()">Tính toán</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function tinhTinhYeu() {
+            let ten1 = document.getElementById("ten1").value;
+            let ten2 = document.getElementById("ten2").value;
+            let kq = document.getElementById("ketQua");
+            let soNgauNhien = Math.floor(Math.random() * 100) + 1;
+            kq.innerText = "Tỷ lệ phù hợp: " + soNgauNhien + "%";
+        }
+    </script>
+
+</body>
+
+</html>

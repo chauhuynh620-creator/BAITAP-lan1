@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="soNhap" placeholder="Nhập số từ 1-10">
+    <button onclick="doanSo()">Đoán</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function doanSo() {
+            let soNguoiDung = parseInt(document.getElementById("soNhap").value);
+            let soMay = Math.floor(Math.random() * 10) + 1;
+            let kq = document.getElementById("ketQua");
+
+            if (soNguoiDung === soMay) {
+                kq.innerText = "Thắng";
+            } else {
+                kq.innerText = "Chưa may mắn";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

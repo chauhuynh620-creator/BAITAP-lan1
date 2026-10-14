@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10 - Máy tính đơn giản</title>
+</head>
+
+<body>
+
+    <input type="number" id="so1" placeholder="Nhập số thứ nhất">
+    <input type="number" id="so2" placeholder="Nhập số thứ hai">
+    <br><br>
+    <button onclick="tinh('+')">Cộng</button>
+    <button onclick="tinh('-')">Trừ</button>
+    <button onclick="tinh('*')">Nhân</button>
+    <button onclick="tinh('/')">Chia</button>
+
+    <p id="ketQua"></p>
+
+    <script>
+        function tinh(phepToan) {
+            let a = parseFloat(document.getElementById("so1").value);
+            let b = parseFloat(document.getElementById("so2").value);
+            let kq = document.getElementById("ketQua");
+            let ketQua = 0;
+
+            if (phepToan === '+') ketQua = a + b;
+            else if (phepToan === '-') ketQua = a - b;
+            else if (phepToan === '*') ketQua = a * b;
+            else if (phepToan === '/') ketQua = a / b;
+
+            kq.innerText = "Kết quả: " + ketQua;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+
+<body>
+
+    <input type="number" id="soNguyen" placeholder="Nhập số nguyên">
+    <button onclick="kiemTra()">Kiểm tra</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function kiemTra() {
+            let n = parseInt(document.getElementById("soNguyen").value);
+            let kq = document.getElementById("ketQua");
+
+            if (n % 2 === 0) {
+                kq.innerText = "Số chẵn";
+            } else {
+                kq.innerText = "Số lẻ";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

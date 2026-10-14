@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="diem" placeholder="Nhập điểm (0-100)">
+    <button onclick="xepLoai()">Xếp loại</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function xepLoai() {
+            let d = parseFloat(document.getElementById("diem").value);
+            let kq = document.getElementById("ketQua");
+
+            if (d >= 90 && d <= 100) {
+                kq.innerText = "A";
+            } else if (d >= 80 && d < 90) {
+                kq.innerText = "B";
+            } else if (d >= 70 && d < 80) {
+                kq.innerText = "C";
+            } else if (d >= 60 && d < 70) {
+                kq.innerText = "D";
+            } else if (d >= 0 && d < 60) {
+                kq.innerText = "F";
+            } else {
+                kq.innerText = "Điểm không hợp lệ!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

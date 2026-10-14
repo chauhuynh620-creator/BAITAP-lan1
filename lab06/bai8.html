@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="tenNguoiDung" placeholder="Nhập tên của bạn">
+    <button onclick="duDoanNgheNghiep()">Dự đoán</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function duDoanNgheNghiep() {
+            let ten = document.getElementById("tenNguoiDung").value;
+            let danhSachNghe = ["Lập trình viên", "Bác sĩ", "Giáo viên", "Doanh nhân", "Kỹ sư", "Nhà thiết kế", "Nghệ sĩ"];
+            let ngheNgauNhien = danhSachNghe[Math.floor(Math.random() * danhSachNghe.length)];
+            let kq = document.getElementById("ketQua");
+            kq.innerText = ten + " có tương lai làm: " + ngheNgauNhien;
+        }
+    </script>
+
+</body>
+
+</html>

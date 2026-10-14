@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 13 - Chuyển đổi nhiệt độ</title>
+</head>
+
+<body>
+
+    <input type="number" id="nhietDoC" placeholder="Nhập nhiệt độ theo °C">
+    <button onclick="chuyenDoi()">Chuyển đổi</button>
+    <p id="ketQua"></p>
+
+    <script>
+        function chuyenDoi() {
+            let c = parseFloat(document.getElementById("nhietDoC").value);
+            let kq = document.getElementById("ketQua");
+
+            let f = (9 / 5) * c + 32;
+
+            kq.innerText = "Kết quả: " + f + " °F";
+        }
+    </script>
+
+</body>
+
+</html>
